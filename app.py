@@ -1,13 +1,15 @@
 import random
 
-
 while(True):
     rabbit = False
-    tortoise = False
-    system_generated = random.randint(1000,9999)
+    tortoise = False 
+    system_generated = ""
+    for i in range(4):system_generated += str(random.randint(0,9))
+    user_input =  input("Enter a four digit Positive number : ")
+    if user_input[0] == '-' or user_input[0] == '+':user_input = user_input[1:]
     try:
-        user_input =  int(input("Enter a four digit number : "))
-        if len(str(user_input)) != 4:
+        temp = int(user_input)
+        if len(user_input) != 4 or temp < 0:
             print("Enter a valid number")
             continue
     except:
@@ -17,19 +19,18 @@ while(True):
     if system_generated == user_input :
         print("WINNER")
     else:
-        for i in range(3):
-            if str(user_input)[i] == str(system_generated)[i]:
+        for i in range(4):
+            if user_input[i] == system_generated[i]:
                 rabbit = True
-                continue
-            if str(user_input)[i] in str(system_generated):
+            elif user_input[i] in system_generated:
                 tortoise = True
     if rabbit:
         print("You got rabbit")
-    if tortoise:
+    elif tortoise:
         print("You got tortoise")
 
-    button = input("Do you want To Continue? ")
-    if button != 'y':
+    button = input("Do you want To Continue? \n press [yes] : ")
+    if button.lower() != 'yes':
         break
 
 
