@@ -1,0 +1,51 @@
+.calc-div{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.calc-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+    height: fit-content;
+}
+.user-display{
+    border: 1px solid black;
+    padding-top: .3rem;
+}
+
+#answer{
+    border: 0;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:.4rem ;
+    pointer-events: none;
+}   
+#input{
+    width: 312px;
+    border: 0;
+    padding-top:1rem ;
+    padding-right: .4rem;
+    margin: 0;
+    font-size: 20PX;
+    text-align: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#input:focus{
+    outline: none;
+}
+h3{
+    text-align: center;
+}
+
+.btn{
+    padding: 15px;
+    margin: 5px;
+}
+.btn-danger,.btn-success,.btn-dark{
+    width: 100px;
+}

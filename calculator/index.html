@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-div">
+            <div class="calc-box">
+                <h3>Calculator</h3>
+                <div class="user-display">
+                    <input id="answer" type="text" value="" readonly><br>
+                    <input id='input' value="" type="text">
+                </div>
+                <div class="buttons">
+                    <table>
+                        <tr>
+                            <td class="btn btn-outline-dark" id="b-7">7</td>
+                            <td class="btn btn-outline-dark" id="b-8">8</td>
+                            <td class="btn btn-outline-dark" id="b-9">9</td>
+                            <td class="btn btn-outline-success" id="b-div"><b>/</b></td>
+                            <td colspan="2" class="btn btn-danger" id="b-c"><b>C</b></td>
+                        </tr>
+                        <tr>
+                            <td class="btn btn-outline-dark" id="b-4">4</td>
+                            <td class="btn btn-outline-dark" id="b-5">5</td>
+                            <td class="btn btn-outline-dark" id="b-6">6</td>
+                            <td class="btn btn-outline-success" id="b-mul"><b>*</b></td>
+                            <td colspan="2" class="btn btn-dark" id="b-b"><i class="fa-solid fa-delete-left"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="btn btn-outline-dark" id="b-1">1</td>
+                            <td class="btn btn-outline-dark" id="b-2">2</td>
+                            <td class="btn btn-outline-dark" id="b-3">3</td>
+                            <td class="btn btn-outline-success" id="b-sub"><b>-</b></td>
+                            <td class="btn btn-outline-dark" id="b-bro"><b>( </b></td>
+                            <td class="btn btn-outline-dark" id="b-brc"><b>)</b></td>
+                        </tr>
+                        <tr>
+                            <td class="btn btn-outline-dark" id="b-0">0</td>
+                            <td class="btn btn-outline-dark" id="b-dot"><b>.</b></td>
+                            <td class="btn btn-outline-success" id="b-mod"><b>%</b></td>
+                            <td class="btn btn-outline-success" id="b-add"><b>+</b></td>
+                            <td class="btn btn-success" id="b-sum"><b>=</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./jquery-3.6.0.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

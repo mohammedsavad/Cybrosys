@@ -1,0 +1,91 @@
+.snake{
+    background-color: teal;
+    height: 5px;
+    width: 10px;
+
+}
+.container{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    height: fit-content;
+
+
+}
+.score{
+    border: 1px solid #dc3545;
+    padding: 1rem;
+}
+
+.controler-div{
+    background-color: rgb(197, 226, 245);
+    height: 85vh;
+    border-radius: 10px;
+    display: grid;
+    align-items:flex-end;
+}
+h3{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 1rem;
+    font-weight: 900;
+    border: 2px solid #dc3545;
+    box-shadow:2px 2px gb(86, 247, 108);
+    border-radius: 20px;
+}
+h3:hover{
+    background-color: white;
+    color: red;
+}
+.canvas-div{
+    background-color: rgb(86, 247, 108);
+    height: 85vh;   
+    border-radius: 10px;
+}
+.start-stop{
+    margin-bottom: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#start,#restart,#stop,#level {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    float: left;
+}
+.btn-danger:hover{
+    color:  #dc3545;
+    background-color: white;
+}
+.btn-outline-danger{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.controls{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.canvas-div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.radio{
+    visibility: hidden;
+}
+.level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    border: 5px solid black;
+}
