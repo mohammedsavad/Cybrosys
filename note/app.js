@@ -137,3 +137,21 @@ $('#submit').click(function (e) {
             </div>`);
         }
 });
+
+$('#f-by-t').click(function (e) { 
+    e.preventDefault();
+    for (i = 0; i < task_DB.length-1; i++)
+{
+    for (j = 0; j < task_DB.length-i-1; j++)
+    {
+        if (task_DB[j].title.localeCompare(task_DB[j+1].title)==1)
+        {
+            temp = task_DB[j]
+            task_DB[j]=task_DB[j+1]
+            task_DB[j+1] = temp
+        }
+    }
+ 
+}
+$.fn.load_data()
+});
