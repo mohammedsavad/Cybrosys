@@ -1,0 +1,75 @@
+body{
+    background-color: white;
+    
+    
+}
+table{
+    box-shadow: 10px 10px 10px 10px rgba(19, 17, 17, 0.2);
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+  }
+  
+  li {
+    float: left;
+    height: 50px;
+  }
+
+i{
+    margin-right: 4REM;
+    font-size: 30px !important;
+    box-sizing: border-box;
+    
+}
+h6{
+    background-color: gray;
+}
+label{
+    float: left;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+#upi,#wallets,#cr,#cash{float:left;}
+#next{
+    margin-top: 20px;
+    width:70px;
+}
+#end{
+    margin-left: 100px;
+
+}
+.fa-cc-amex{margin-left: -135px;
+    margin-right: 35px;
+    
+
+}
+.fa-cc-mastercard, .fa-cc-visa{margin-left: -35px;
+    margin-right: 35px;
+
+}
+
+#txt{
+    width:70px;
+    margin-right: 50px;
+    height:15px;
+    margin-top: 10px;
+}
+#lastpay{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: auto;
+    background-color: white;
+}
+#icons{
+    margin-left: 250px;
+    font-size: medium;
+    bottom: 100px;
+}
