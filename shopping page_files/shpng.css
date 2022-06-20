@@ -1,11 +1,16 @@
 body{
-    background-color: white;
+    background-color: #e3eefe;
     
-    
+    margin: 0;
 }
 table{
+    width: 700px;
+    background-color: white;
     box-shadow: 10px 10px 10px 10px rgba(19, 17, 17, 0.2);
     border-radius: 4px;
+}
+td{
+    width: fit-content;
 }
 
 ul {
@@ -28,12 +33,47 @@ i{
     
 }
 h6{
-    background-color: gray;
+    background-color: #0049b7;
+    height: 3rem;
+    margin: 0;
+    padding-top: .5rem;
+    padding-left: 2rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+}
+h6:hover{
+    color: #fff;
+    background-color: #00ddff;
+    text-decoration: underline;
+}
+.warning{
+    color: red;
+}
+
+#homes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #e3eefe;
+}
+.alert{
+    height:60px;
+    background-color: #f75990;
+    color: #fff;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: large
 }
 label{
-    float: left;
+
     margin-left: 10px;
     margin-right: 35px;
+    font-size: large;
 }
 #upi,#wallets,#cr,#cash{float:left;}
 #next{
@@ -72,4 +112,68 @@ label{
     margin-left: 250px;
     font-size: medium;
     bottom: 100px;
+}
+button{ 
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    min-width: 90px;
+    color: #fff;
+    background-color: #0049b7
+}
+button:hover{
+    border: 1px solid #f75990;
+    background-color: #fff;
+    color: #f75990;
+    text-transform: capitalize;
+}
+table{
+    overflow: hidden;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #e3eefe;
+}
+img{
+    border-radius: 20px;
+    height: 120px;
+}
+.upds{
+    height: 2.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 20px;
+    text-align: center  ;
+}
+#carts{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+#address, #payment {
+    margin-top: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#lastpay{
+    margin-left: 400px;
+}
+.address-warper{
+    border: 3px solid #0049b7;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #cddbf0;
+
+}
+.form-control{
+    margin-top: 2px;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 500px;
+    margin-bottom: 2px;
+    text-align: center  ;
 }
