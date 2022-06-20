@@ -2,12 +2,7 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>shopping page</title>
-        <link rel="stylesheet" href="bootstrap.css" integrity="sha512-UVQYZVYu7WhHEaO2xGEmc4/3F8ctnXt4jwfGl2MCIHKc95RMgYS8yfNJ3j6wUe0UGiTK0S3vcmh3Ml9h278x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">  
-          <script src="bootstrap.js"></script>
-
-          
-          <link rel="stylesheet" href="font-awesome.css">
-          <link rel="stylesheet" href="shpng.css">
+          <link rel="stylesheet" href="style.css">
          
 
     </head>
@@ -24,8 +19,9 @@
                                     <i class="fa fa-shopping-cart" id="cart">cart</i>
                                 </h6>
                             </div> 
-                            <div class="text-uppercase text-center" id="homes">
+                            <div id="homes">
                                 <table class="table table-bordered data-table" id="contact">
+                                    <div class="alert"></div>
                                     <tbody><tr>
                                         <td>
                                             <img src="phone.jpeg" width="104" height="142">
@@ -70,53 +66,62 @@
                                 </tbody></table>
                             </div>
                             <div id="carts" style="display: none;"> 
-                                <h4>My cart</h4>
+                                <h1>My cart</h1>
                                 <button type="submit" id="add">
                                     <b>Add</b>
                                 </button>
                                 <button type="submit" id="clear">
                                     <b>clear</b>
                                 </button>
+                                <button type="submit" id="check">
+                                    <b>process checkout</b>
+                                </button>
                                 <table class="table table-bordered data-table" id="cartraw">
                                     
                                 </table>
                             </div>
-                            <div id="address">
-                                <form class="address" style="display: none;">
-                                    <input type="text" placeholder="Name" name="Name" id="Name" class="form-control form-control-lg" required=""><br>
-                                    <input type="tel" placeholder="phone Number" name="number" id="Number" class="form-control form-control-lg" required=""><br>
-                                    <input type="address" placeholder="address" name="address" id="ad" class="form-control form-control-lg" required=""><br>
-                                    <button type="submit" id="next">
+                            <div id="address" style="display: none;">
+                                <div class="address-warper">
+                                    <input type="text" placeholder="Name" name="Name" id="name" value="" class="form-control"><br>
+                                    <p class="warning" id="name_warning">name must be minimum 3 charecter lenght</p>    
+                                    <input type="tel" placeholder="phone Number" name="number" id="number" value="" class="form-control"><br>
+                                    <p class="warning" id="phone_warning">Enter a valid Phone number</p>
+                                    <input type="address" placeholder="address" name="address" id="ad" value="" class="form-control"><br>
+                                    <p class="warning" id="add_warning">Enter a valid Addressr</p>
+                                    <button id="next">
                                         <b>Next</b>
                                     </button>
-                                </form>
+                                </div>
 
                             </div>
                             <div id="payment" style="display: none;">
-                                <h4>payments</h4>
-                                
-                                
-                                <input type="radio" id="cr"><label>credit/debit/ATM Card</label><hr><br>
-                                <input type="radio" id="cash"><label>cash on delivery<br></label>
+                                <div class="address-warper">
+                                <h2>Payments</h2>                       
+                                <input type="radio" id="cr" name="bttn"><label for="cr">credit/debit/ATM Card</label><br><br>
+                                <input type="radio" id="cash" name="bttn"><label for="cash">cash on delivery<br></label><br>
                                 <button id="pays">
                                     pay
                                 </button>
+                            </div>
                            
                         </div>
-                            <div id="lastpay" style="display: none;">
-                                <div>
+                        <div id="lastpay" style="display: none;">
+                            <div class="address-warper">
                                     <h5>
                                     <i class="fa fa-credit-card" style="font-size:36px"> credit card</i>
                                     <i class="fa fa-university" style="font-size:36px">Bank transfer</i>
                                     </h5>
                                     <div class="form-outline">
                                         <label for="Name" class="form-label"><b>Full name(on the card)</b></label>
-                                        <input type="text" placeholder="Enter name" name="cname" id="cname" class="form-control form-control-lg" required="">
+                                        <input type="text" placeholder="Enter name" name="cname" id="cname" class="form-control" required="">
+                                    <p class="warning" id="card_name_warning">name must be minimum 3 charecter lenght</p>    
                                     </div>
                                     <div class="form-group">
                                         <label for="cardNumber">Card number</label>
                                         <div class="input-group">
-                                            <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required="">
+                                            <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" id="card" required="">
+                                            
+                                    <p class="warning" id="card_number_warning">Enter A valid card number</p> 
                                             <div class="form-outline" id="icons">
                                                 <span class="input-group-text text-muted">
                                                     <i class="fa fa-cc-amex"></i>
@@ -131,25 +136,29 @@
                                             <div class="form-group">
                                                 <label><span class="hidden-xs">Expiration</span></label>
                                                 <div class="input-group">
-                                                    <input type="number" placeholder="MM" name="" class="form-control" required="">
-                                                    <input type="number" placeholder="YY" name="" class="form-control" required="">
+                                                    <input type="number" placeholder="MM" name="" class="form-control" id="month" required="">                       
+                                                    <p class="warning" id="month_warning">01-12 is valid input</p> 
+                                                    <input type="number" placeholder="YYYY" name="" class="form-control" id="year" required="">
+                                                    <p class="warning" id="year_warning_01">YYYY is valid format</p> 
+                                                    <p class="warning" id="year_warning_02">Card Expired</p> 
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group mb-4">
-                                                <label data-toggle="tooltip" title="Three-digits code on the back of your card">
+                                                <label data-toggle="tooltip" title="Three-digits code on the back of your card" >
                                                     CVV
                                                     <i class="fa fa-question-circle"></i>
                                                 </label>
-                                                <input type="text" required="" class="form-control">
+                                                <input type="text" id="cvv" required="" class="form-control">
+                                                
+                                                <p class="warning" id="cvv_warning">Invald details</p> 
                                             </div>
+                                            
                                         </div>
                                     </div>
-                                </div>
-                                <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm" id="confirm"> Confirm  </button>
-                               
-                            </div>
+                                    <button id="confirm"> Confirm </button>
+                                 </div>
                         </div>
                         <div id="end" style="display: none;">
                             <img src="thanks.jpg">
@@ -159,46 +168,8 @@
             </div>
         </div>
     
-</section>
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-    <script src="jquery.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</section>  
+    <script src="jquery-3.6.0.js"></script>
         
-        <script src="shopng.js"></script>
+    <script src="app.js"></script>
 </body></html>
