@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple POS</title>
+    <link rel="stylesheet" href="POS.css">
+
+</head>
+<body>
+    <div id="but">
+            <button id="nnn"> Add Product</button>
+            <button id="vvv"> Add Customer</button>
+            <button id="sss"> Billing</button>
+        
+    </div>
+    <table id="eeeee">
+        <tr>
+            <td>
+                <h2>ADD PRODUCT</h2>
+                <!--<form class="submitform" method="post">-->
+                    
+                    <div>
+                        <label for="product">Product name</label>
+                        <input type="text" name="product" id="product" required="">
+                        <p id="prdct_warning_number">number invalid</p>
+                        
+                    </div>
+                    
+                    <div>
+                        <label for="per price">Price</label>
+                        <input type="text" name="perprice" id="perprice" required="">
+                        <p id="prdct_warning_alph">character invalid</p>
+
+                    </div>
+                    <div class="form_action--button">
+                        <button  id="submit" >ADD</button>
+                        <button  id="reset" >RESET</button>
+
+                    </div>
+                <!--</form>-->
+                <td>
+                <h2 id="close">X</h2>
+
+                    <table class="list" id="scorelist">
+                        <thead>
+                            <tr>
+                                
+                                <th>Product name</th>
+                                <th>Price</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="values">
+
+                        </tbody>
+                    </table>
+                </td >
+            </td>
+        </tr>
+    </table>
+
+    <table id="cust">
+
+        <tr>
+        <td>
+            <h2 id="cross">X</h2>
+
+        <h2>ADD CUSTOMER</h2>
+
+                <div>
+                    <label for="cname">Customer name</label>
+                    <input type="text" name="cname" id="cname" required="">
+                    <p id="cust_warning_name">number invalid</p>
+
+                </div>
+                
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" required="">
+                    <p id="cust_warning_number">character invalid</p>
+                    
+                </div>
+                <div >
+                    <button  id="sub" >ADD</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table class="clist" >
+        
+
+        <thead>
+    <tr style="height: 5px;">
+    <td style="height: 5px;"></td>
+    <td style="height: 5px;"><h2 id="c" style="font-size: 10px;margin-left: 325px; margin-bottom: 5px;">X</h2></td></tr>
+            <tr>
+
+                
+                <th>Customer name</th>
+                <th>Phone Number</th>
+
+            </tr>
+        </thead>
+        <tbody id="cvalues">
+
+        </tbody>
+    </table>
+
+    <table id="invoice">
+        <tr>
+            <td>
+            <h2 id="x">X</h2>
+
+                <div>
+                    <select name="select_customer" id="select_customer">
+                    <option  id="customer_name" value="">none</option></select>
+                </div>
+                
+                <div>
+                    <select name="select_product" id="select_product">
+                        <option  id="product_name" value="">none</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="qty">Quantity:</label>
+                    <input type="text" name="qty" id="qty" required>
+                </div>
+                
+                <div >
+                    <button  id="add" >Add Product</button>
+                    <button  id="bill" >Generate Bill</button>
+                    <button  id="another" >Next </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="billing" >
+        <caption>INVOICE</caption>
+        <thead>    
+           <th> <label>Date:</label><label id="date"></label></th>
+           <th ><label style="margin-left: 200px;">Name:</label><label style="margin-left: 0;" id="name_cust"></label></th>
+
+            <tr>
+                
+                <th>ITEM</th>
+                <th>PRICE</th>
+                <th>QTY</th>
+                <th>SUBTOTAL</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="Bvalues">
+        </tbody>
+        <th> <label style=" margin-left:220px;">Total:</label><label id="total"></label></th>
+
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="POS.js"></script>
+</body>
+</html>

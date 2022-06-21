@@ -1,0 +1,255 @@
+body{margin: 0;
+    padding: 0;
+    text-shadow: #413f3f;
+    background-color: rgb(124, 154, 167);
+}
+table{ width: 80%;
+    height: 20%;
+    margin:40px auto ;
+    background:white ;
+    
+}
+table .list{
+    text-align:center ;
+    width: 50%;
+}
+td{
+    border: 1px solid rgb(204, 200, 200);
+    text-align:left ;
+    padding: 5px 8px;
+    width: 100px;
+}
+tr:nth-child(even) {
+    background-color:rgb(204, 200, 200) ;
+}
+
+input {
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+    box-shadow: 5px 5px #413f3f;
+}
+#submit,#reset{background:brown;    
+    padding: 6px 5px;
+    margin: 10px 20px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+    width: 41%;
+}
+#submit:hover{
+    background: #4b99d8;
+}
+#reset:hover{
+    background: #4b99d8;
+}
+#cust{
+    width: 500px;
+    margin: 250px 600px;
+    top: 0;
+    position: absolute;
+
+}
+.clist{
+    width: 500px;
+    margin: 300px 550px;
+    top: 0;
+    position: absolute;
+    
+}
+#invoice{
+    width: 500px;
+    margin: 250px 650px;
+    top: 0;
+    position: absolute;
+}
+select{
+    width: 500px;
+    padding: 8px;
+    box-shadow: 5px 5px #413f3f;
+    margin: 5px;
+
+}
+
+#nnn{
+    width: 400px;
+    height:70px;
+    align-items: baseline;
+    float: left;
+    border-radius: 6px;
+    
+}
+#vvv{
+    width: 400px;
+    height:70px;
+    align-items: baseline;
+    float: left;
+    border-radius: 6px;
+
+}
+#sss{
+    width: 350px;
+    height:70px;
+    align-items: baseline;
+    border-radius: 6px;
+
+}
+h2{
+    color: #eee;
+}
+input.text{
+    color: rgb(65, 63, 63);
+}
+caption{
+    color: rgb(34, 31, 31);
+    background:white ;
+    margin-top:5px;
+}
+#but{
+    width: 1200px;
+    margin: 0 auto;
+}
+#eeeee{
+    margin: 300px 250px;
+    top: 0;
+    position: absolute;
+    width: 1000px;
+    
+}
+.billing{
+    width: 500px;
+    margin: 700px 400px;
+    top: 0;
+    position: absolute;
+}
+#close{
+    width: 20px;
+    padding: 4px;
+    text-align: center;
+    margin-left: 95%;
+    margin-bottom: 30%;
+    border: 1px  solid rgb(78, 78, 78);
+    color: rgb(78, 78, 78);
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 10px;
+}
+#close:hover{
+    background:#fff;
+}
+#cross{
+    width: 20px;
+    padding: 4px;
+    text-align: center;
+    margin-left: 95%;
+    margin-bottom: 5%;
+    border: 1px  solid rgb(78, 78, 78);
+    color: rgb(78, 78, 78);
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 10px;
+}
+#cross:hover{
+    background:#fff;
+}
+#x{
+    width: 20px;
+    padding: 4px;
+    text-align: center;
+    margin-left: 95%;
+    margin-bottom: 10%;
+    border: 1px  solid rgb(78, 78, 78);
+    color: rgb(78, 78, 78);
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 10px;
+    
+}
+#x:hover{
+    background:#fff;
+}
+#c{
+    width: 20px;
+    padding: 4px;
+    text-align: center;
+    margin-left: 95%;
+    margin-bottom: 30%;
+    border: 1px  solid rgb(78, 78, 78);
+    color: rgb(78, 78, 78);
+    border-radius: 100%;
+    cursor: pointer;
+}
+#x:hover{
+    background:#fff;
+}
+
+#name_cust{
+    margin-left :200% ;
+}
+#sub{
+    background-color: brown;
+    color: black;
+    width: 41%;
+    padding: 4px;
+    border-radius: 50px;
+}
+#add{
+    background-color: brown;
+    padding: 6px 5px;
+    margin: 10px 20px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+    width: 35%;
+}
+#remove{
+    background-color: brown;
+    padding: 6px 5px;
+    margin: 10px 20px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+    width: 35%;
+}
+#bill{
+    background-color: brown;
+    padding: 6px 5px;
+    margin: 10px 20px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+    width: 35%;
+}
+#another{
+    background-color: brown;
+    padding: 6px 5px;
+    margin: 10px 20px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor:pointer;
+    outline:none;
+    width: 35%;
+}
+h2{
+    color: #3d3939;
+}
+#total{
+    margin-left:300px;
+}
