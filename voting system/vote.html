@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Exercise</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vote.css">
+
+
+</head >
+<body>
+<div class="container">
+    
+        
+  <h1>CANDIDATE REGISTRATION</h1>
+  <form>
+    <div class="form-group">
+      <label>Candidate_Name:</label>
+      <input type="text" name="name" class="form-control" id="name" value="" required="">
+    </div>
+    <div class="form-group">
+      <label>Candidate_id:</label>
+      <input type="text" name="id" class="form-control" id="id" value="" required="">
+    </div>
+    <button type="submit" class="btn btn-success btn-save">ADD</button>
+  </form>
+<br>
+  <table class="table table-bordered data-table" id="ad" >
+    <thead>
+      <th>Candidate_Name</th>
+      <th>Candidate_id</th>
+      <th>Action</th>
+    </thead>
+    <tbody id="first">
+      
+    </tbody>
+  </table>
+  <button type="submit" class=" btn-save vote" id="vvote">START VOTE -></button>
+</div>
+<div class="d-flex justify-content-center">
+    <table class="" id="adddt">
+        <thead>
+          <th>Candidate_Name</th>
+          <th>Candidate_id</th>
+          <th></th>
+        </thead>
+        <tbody id="cand">
+          
+        </tbody>
+      </table>
+      <br>
+
+</div>
+<button type="button" class=" btn-save result" id="result">Show Result</button>
+
+<div class="d-flex justify-content-center">
+    <table class="" id="vdt">
+        <thead>
+          <th>Candidate_Name</th>
+          <th id="count">count</th>
+        </thead>
+        <tbody id="retab">
+          
+        </tbody>
+      </table>
+      <br>
+
+</div>
+
+    <script src="vote.js"></script>
+</body>
+</html>
+
+

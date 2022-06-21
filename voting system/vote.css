@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    margin: 50px; 
+    color:white; 
+    background: brown; 
+    width: 55%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  form{
+    width: 30%;
+    border-color: black;
+  }
+  label{
+    font-size: medium;
+  }
+  #adddt{
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 100px;
+  }
+  
+  #adddt td{
+    border: 1px solid grey;
+  }
+  #vdt{
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 100px;
+  }
+  
+  #vdt td,th{
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: medium;
+
+  }
+  #result{
+    display:center;
+  }
+  
+ 
